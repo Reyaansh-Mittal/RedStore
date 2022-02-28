@@ -24,6 +24,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin-right: 20px;
+    /* background: #ff523b; */
 }
 a{
     text-decoration: none;
@@ -140,7 +141,7 @@ col-4 p{
     background: radial-gradient(#fff,#ffd6d6);
     margin-top: 80px;
     padding: 30px 0;
-    
+    margin-left: 100px;
 }
 .col-2 .offer-img{
     padding: 50px;
@@ -148,7 +149,7 @@ col-4 p{
 small{
     color:#555
 }
-/*------- testimonial -------*/
+/* /------- testimonial -------/ */
 .testimonial{
     padding-top: 100px;
 }
@@ -181,7 +182,7 @@ small{
     color: #555;
     font-size: 16px;
 }    
-/*--------- Brands ----------*/
+/* /--------- Brands ----------/ */
 .brands{
     margin: 100px auto;
 }
@@ -196,7 +197,7 @@ small{
 .col-5 img:hover{
     filter: grayscale(0);
 }
-/*-------- Footer --------*/
+/* /-------- Footer --------/ */
 .footer{
     background: #000;
     color: #8a8a8a;
@@ -253,7 +254,7 @@ ul{
     margin-left: 20px;
     display: none;
 }
-/*------- media query for menu --------*/
+/* /------- media query for menu --------/ */
 
 @media only screen and (max-width: 800px){
     
@@ -281,12 +282,212 @@ ul{
     }    
 }
 
-/*-------media query for less than 600 screen size--------*/
+/* /-------media query for less than 600 screen size--------/ */
 @media only screen and (max-width: 600px){
     .row{
         text-align: center;
     }
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
+    }
+}
+/* /-------- all products page --------/ */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+    transition: max-height 0.5s;
+}
+/* ------ single product details ----- */
+
+.single-product{
+    margin-top: 80px;   
+    margin-left: 20px;
+    
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+.input:focus{
+    outline: none;
+}
+/* ---cart items details--- */
+
+.cart-page{
+    margin: 80px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;  
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+total-price{
+    display: flex;
+    justify-content: flex end;
+}
+.total-price table{
+    border-top: 1px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 695px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+/* ------- account page ------- */
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* /-------media query for less than 600 screen size--------/ */
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info{
+        display: none;
     }
 }
