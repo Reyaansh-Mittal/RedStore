@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products - RedStore</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e63688e243.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images\logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="all products.html">Products</a></li>
+                        <li><a href="contact us.html">Contact</a></li>               
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="images\cart.png" width="30px" height="30px"></a>
+                <img src="images\menu.png" class="menu-icon"
+                onclick="menutoggle()"> 
+            </div>
+        </div>
+
+        <div class="small-container">
+
+            <div class="row row-2">
+            <h2>All Products</h2>
+                <select>
+                    <option>Default Shorting</option>
+                    <option>Short by price</option>
+                    <option>Short by popularity</option>
+                    <option>Short by rate</option>
+                    <option>Short by sale</option>
+                </select>
+            </div>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="product-5 details.html">
+                <img src="images\product-5.jpg"></a>
+                <h4>Gray Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <p>$80.00</p>
+                </div>
+            </div>
+                <div class="col-4">
+                    <a href="product-6 details.html">
+                    <img src="images\product-6.jpg"></a>
+                    <h4>Dark Puma T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <p>$80.00</p>
+                    </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-7 details.html">                        <img src="images\product-7.jpg">
+                        <h4>Workout Socks</h4></a>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <p>$50.00</p>
+                        </div>
+                        </div>
+                        <div class="col-4">
+                            <a href="product-8 details.html">
+                            <img src="images\product-8.jpg">
+                            <h4>Black Watch</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <p>$100.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                  
+            </div>
+        </div>
+        <div class="page-btn">
+            <a href="all products.html"><span>1</span></a>
+            <span>2</span>
+            <a href="product page 3.html"><span>3</span></a>
+            <span>&#8594;</span>
+        </div>
+<!-------- Footer -------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our Mobile Application.</h3>
+                    <p>Download Our App For Android And IOS Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="images\play-store.png">
+                        <img src="images\app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images\logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make The Pleasure 
+                        And Benefits Of Sports Accessable To Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links.</h3>
+                    <ul><li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Coupons</li>
+                    </ul>                   
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us.</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>                   
+                </div>
+            </div>
+            <hr>
+    <p class="copyright">Copyright 2022 - Reyaansh Mittal</p>
+        </div>
+    </div>
+    
+<!--------js for toggle menu --------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+    else    
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+        }
+    </script>
+        
+    </body>
+</html>
